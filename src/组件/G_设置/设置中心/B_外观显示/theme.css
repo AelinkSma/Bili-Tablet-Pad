@@ -1,0 +1,50 @@
+/* src/组件/G_设置/设置中心/B_外观显示/theme.css */
+
+/* =========================================
+   1. 语义化变量定义 (Semantic Tokens)
+   ========================================= */
+:root {
+  /* 默认明亮模式 (Light Mode) */
+  --bg-base: #F6F7F9;           /* 网页大背景 (经典灰) */
+  --bg-surface: #FFFFFF;        /* 侧边栏、实心卡片背景 */
+  --bg-glass: rgba(255, 255, 255, 0.65);       /* 磨砂卡片背景 */
+  --bg-glass-heavy: rgba(255, 255, 255, 0.9);  /* 较深/悬停态背景 */
+  
+  --text-main: #333333;         /* 主要文字 */
+  --text-sub: #666666;          /* 次要信息 */
+  --text-muted: #999999;        /* 辅助/禁用文字 */
+  
+  --border-base: rgba(0, 0, 0, 0.05);  /* 边框 */
+  --shadow-base: rgba(0, 0, 0, 0.05);  /* 阴影 */
+}
+
+/* 深色模式覆盖 (Dark Mode Override) */
+[data-theme="dark"] {
+  --bg-base: #000000;
+  --bg-surface: #1a1a1a;
+  --bg-glass: rgba(30, 30, 30, 0.65);
+  --bg-glass-heavy: rgba(40, 40, 40, 0.9);
+  
+  --text-main: #ffffff;
+  --text-sub: #aaaaaa;
+  --text-muted: #666666;
+  
+  --border-base: rgba(255, 255, 255, 0.1);
+  --shadow-base: rgba(0, 0, 0, 0.5);
+}
+
+/* =========================================
+   2. 主题色默认值 (Accent Colors Default)
+   实际颜色由 JS 动态设置 --primary-color 和 --primary-color-alpha
+   ========================================= */
+:root {
+  --primary-color: #fb7299;
+  --primary-color-alpha: rgba(251, 114, 153, 0.2);
+}
+/* 针对所有使用磨砂效果的容器优化 */
+.target-box, .panel, .sidebar, .secondary-sidebar {
+  /* 开启硬件加速，防止重绘 */
+  transform: translateZ(0); 
+  /* 告诉浏览器这些属性会变化，提前优化 */
+  will-change: transform, opacity; 
+}
