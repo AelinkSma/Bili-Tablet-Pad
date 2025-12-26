@@ -14,11 +14,11 @@
 
     <!-- 静态操作栏 -->
     <div class="action-row">
-      <div class="action-btn target-box" @click="openLink('https://github.com/yourname/bili-tablet')">
+      <div class="action-btn target-box" @click="openLink('https://github.com/AelinkSma/Bili-Tablet-Pad/tree/main')">
         <span class="icon">🐙</span>
         <span>GitHub 仓库</span>
       </div>
-      <div class="action-btn target-box" @click="openLink('https://github.com/yourname/bili-tablet/issues')">
+      <div class="action-btn target-box" @click="openLink('https://github.com/AelinkSma/Bili-Tablet-Pad/issues')">
         <span class="icon">🐛</span>
         <span>反馈 Bug</span>
       </div>
