@@ -1,6 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import { onMounted } from 'vue'
+import { onMounted, defineAsyncComponent } from 'vue'
 import { Capacitor } from '@capacitor/core'
 import { StatusBar } from '@capacitor/status-bar'
 import { ScreenOrientation } from '@capacitor/screen-orientation'
@@ -9,6 +9,9 @@ import { setupTheme } from '@/组件/G_设置/设置中心/B_外观显示/themeS
 // ✨ 引入刚刚创建的 CSS 文件
 import '@/组件/G_设置/设置中心/B_外观显示/theme.css'
 
+const InitialTermsModal = defineAsyncComponent(() => 
+  import('@/组件/小组件/InitialTermsModal.vue')
+)
 // 🎨 初始化主题系统
 setupTheme()
 
@@ -31,6 +34,7 @@ onMounted(async () => {
 <template>
   <div id="app-root">
     <RouterView />
+    <InitialTermsModal />
   </div>
 </template>
 

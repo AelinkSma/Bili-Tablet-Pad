@@ -1,26 +1,31 @@
-# Bili-Tablet (Android / Vue 3)
+# Bili Tablet Pad 
 
-> ✨ 一个基于 Vue 3 + Capacitor 构建的高颜值的第三方 Bilibili 平板客户端。
-> A beautiful third-party Bilibili tablet client built with Vue 3 & Capacitor.
+<div align="center">
 
-## ⚠️ 免责声明 / Disclaimer
+![Vue 3](https://img.shields.io/badge/Vue-3.3+-4FC08D?style=flat-square&logo=vue.js)
+![Vite](https://img.shields.io/badge/Vite-5.0+-646CFF?style=flat-square&logo=vite)
+![Capacitor](https://img.shields.io/badge/Capacitor-5.0+-1199EE?style=flat-square&logo=capacitor)
+![License](https://img.shields.io/badge/License-AGPL%20v3-red?style=flat-square)
 
-**请务必仔细阅读 / Please read carefully:**
+**为平板而生 · 沉浸式 B 站第三方客户端**
 
-1.  **仅供学习 (For Education Only)**: 本项目仅用于学习 Vue 3、Capacitor 框架以及 RESTful API 架构设计，**严禁用于任何商业用途**。
-2.  **API 来源 (API Source)**: 本项目中使用的 API 来源于 Bilibili 官方接口的公开分析，版权归上海幻电信息科技有限公司所有。
-3.  **风险提示 (Risk Warning)**: 使用非官方客户端登录 Bilibili 账号可能存在账号被限制或封禁的风险，开发者不对因此产生的任何后果负责。请谨慎使用主账号登录。
-4.  **无侵入性 (No Intrusion)**: 本项目不包含任何破解 VIP、破解付费视频或恶意攻击服务器的代码。
+Designed & Developed by **隣に佇んて**
+
+</div>
 
 ---
 
-## 🛠️ 技术栈 / Tech Stack
+## 📖 缘起 (Motivation)
 
-- **核心框架**: Vue 3 + Vite
-- **跨平台引擎**: Capacitor 8 (Android)
-- **状态管理**: Pinia + Persistence
-- **播放器核心**: ArtPlayer + Danmuku (弹幕支持) + Shaka Player (DASH 流媒体支持)
-- **核心算法**: Wbi 签名自动化 / 视频流链接解析
+> "Every decision you make, every action you take, is a choice about the world."
+
+这个项目的诞生，始于一个极其朴素的愿望：我只想躺在床上，用最舒适的姿势刷视频。
+
+官方应用在平板端的体验往往只是手机版的简单放大，操作逻辑割裂，难以单手掌控。更令我抗拒的是竖屏短视频流那种“被算法投喂”的被动感——我不想成为多巴胺的奴隶，我想找回“点播”的尊严。
+
+**Bili Tablet Pad** 是一款基于 Vue 3 全家桶与 Capacitor 构建的实验性客户端。它拒绝竖屏绑架，专注于横屏沉浸体验，试图在指尖重构那个纯粹的 Bilibili。
+
+虽然因个人健康原因（即将迎来一场手术），项目的更新或许会暂时按下暂停键，但我相信代码是有温度的。希望这份开源代码能成为后来者的基石。
 
 ## 🚀 快速开始 / Quick Start
 
@@ -44,21 +49,44 @@ npm run dev
 ```bash
 npm run app
 ```
-
-详细版：
+### 打开Android Studio
 ```bash
-# 1. 构建前端资源
-npm run build
-
-# 2. 同步到安卓原生目录
-npx cap sync
-
-# 3. 打开 Android Studio 进行调试/打包
 npx cap open android
 ```
 
-## 🤝 贡献 / Contribution
+## 🛠️ 技术栈 (Tech Stack)
 
-欢迎提交 Issue 或 PR 改进代码结构。请确保不上传任何包含个人 `SESSDATA` 或 `Cookie` 的配置文件。
+本项目感谢以下开源力量的支持：
+
+* **Core Framework**: [Vue 3](https://vuejs.org/) (Composition API)
+* **Build Tool**: [Vite](https://vitejs.dev/)
+* **Cross-Platform**: [Capacitor](https://capacitorjs.com/)
+* **State Management**: [Pinia](https://pinia.vuejs.org/)
+* **Video Player**: [ArtPlayer](https://artplayer.org/) / [Shaka Player](https://github.com/shaka-project/shaka-player)
+* **Network**: [Axios](https://axios-http.com/)
+* **Utils**: [VueUse](https://vueuse.org/), [Protobuf.js](https://github.com/protobufjs/protobuf.js), [Spark-MD5](https://github.com/satazor/js-spark-md5)
+
+## ⚠️ 免责声明 (Disclaimer)
+
+1.  **非官方声明**：本项目是开源社区爱好者作品，与 **哔哩哔哩 (Bilibili)** 及其运营主体无任何关联。
+2.  **仅供学习**：本项目仅供 Vue 3 技术交流与学习使用，请在下载后 **24 小时内删除**。
+3.  **禁止商用**：依据 **AGPL v3.0** 协议及开发者意愿，**严禁**将本项目用于任何形式的商业盈利（包括付费分发、广告植入、会员倒卖）。
+4.  **设备限制**：本项目**严禁安装于电视端（TV/OTT）**。未适配电视端鉴权机制，强制运行后果自负。
+5.  **账号风险**：使用非官方客户端存在被平台风控的风险，继续使用即代表您愿承担账号被限制等后果。
+
+## 🤝 贡献与反馈 (Contribution)
+
+虽然我可能因手术暂时无法高频维护，但欢迎提交 PR 或 Issue。
+
+* 🐛 [反馈 Bug](https://github.com/AelinkSma/Bili-Tablet-Pad/issues)
+* 🐙 [Fork 项目](https://github.com/AelinkSma/Bili-Tablet-Pad/fork)
+
+## ❤️ 致谢
+
+特别感谢 **Google Gemini**、**Tencent CodeBuddy** 与 **小爱同学** 在开发过程中提供的智慧支持。
+
 ---
-*Created with ❤️ by the Open Source Community*
+
+<div align="center">
+  <i>有缘再见，无缘再见。</i>
+</div>

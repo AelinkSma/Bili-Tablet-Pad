@@ -11,7 +11,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --fix --cache",
-    "app": "npm run build && npx cap sync"
+    "app": "npm run build && npx cap sync",
+    "easyLin": "npm install && npm run build && npx cap add android || true && npx cap sync && npx cap open android",
+    "easyWin": "npm install && npm run build && (if not exist android npx cap add android) && npx cap sync && npx cap open android"
   },
   "dependencies": {
     "@capacitor/android": "^8.0.0",
@@ -25,6 +27,7 @@
     "artplayer-plugin-danmuku": "^5.2.0",
     "axios": "^1.13.2",
     "element-plus": "^2.12.0",
+    "eruda": "^3.4.3",
     "pinia": "^3.0.4",
     "pinia-plugin-persistedstate": "^4.7.1",
     "protobufjs": "^8.0.0",

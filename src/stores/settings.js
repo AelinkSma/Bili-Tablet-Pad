@@ -3,6 +3,7 @@ import { defineStore } from 'pinia'
 
 export const useSettingsStore = defineStore('settings', {
   state: () => ({
+    hasAcceptedTerms: false, // 是否已接受条款
     // 启动行为: 'welcome' | 'home_first' | 'resume'
     startupBehavior: 'welcome',
     
@@ -18,6 +19,9 @@ export const useSettingsStore = defineStore('settings', {
     preferredQuality: 80, // 默认 1080P
   }),
   actions: {
+    acceptTerms() {
+      this.hasAcceptedTerms = true
+    },
     setStartupBehavior(mode) {
       this.startupBehavior = mode
     },

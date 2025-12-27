@@ -92,7 +92,7 @@ defineExpose({
   user-select: none;
   z-index: 50; /* 高于播放器 */
   transition: transform 0.2s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.2s;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.1);
   /* 初始状态 */

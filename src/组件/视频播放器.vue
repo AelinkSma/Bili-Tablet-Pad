@@ -399,6 +399,8 @@ onBeforeUnmount(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1; /* 确保建立层级上下文 */
 }
 
 .artplayer-app {
@@ -439,7 +441,9 @@ onBeforeUnmount(() => {
   top: 24px;
   right: 24px;
   opacity: 0.6;
-  z-index: 50; /* Prompt requirement */
+  z-index: 100; /* 强制提升到最高，确保在 ArtPlayer 控件之上 */
+  opacity: 1 !important; /* 确保不透明 */
+  pointer-events: auto; /* 确保可点击 */
 }
 
 </style>

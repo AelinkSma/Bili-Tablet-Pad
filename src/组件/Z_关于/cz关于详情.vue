@@ -45,6 +45,12 @@
           <h3 class="card-title">⚠️ 免责声明</h3>
           <div class="card-text disclaimer-content">
             <p class="paragraph">
+              项目仅供vue学习交流,请保证下载安装后在24小时内删除.
+            </p>
+            <p class="paragraph">
+              <strong>设备限制：</strong> 鉴于电视端（TV/OTT）特殊的会员鉴权机制与交互逻辑，为避免侵犯 Bilibili 官方权益及保障您的账号安全，严禁将本软件安装在电视端.本项目也并没有对电视端进行任何适配,如果安装在电视端,将可能无法正常使用本软件(包括且不限于:无法进入软件/无法点击选中任何元素/无法正常播放视频),请自行承担风险.本项目只对平板端有适配且保证不侵犯b站权益.
+            </p>
+            <p class="paragraph">
               <strong>非官方身份：</strong> 本应用（Bili Tablet）是由开源社区爱好者独立开发的第三方客户端，旨在探索Vue 3与跨平台技术的极致体验。本项目与<strong>哔哩哔哩 (Bilibili)</strong>及其运营主体无任何关联、隶属或授权关系。
             </p>
             <p class="paragraph">
@@ -60,7 +66,7 @@
               <strong>广告策略：</strong> 本项目致力于提供纯净的浏览体验，当前未植入任何形式的广告。需明确的是，这并非针对 Bilibili 官方商业内容的恶意屏蔽，而是受限于非官方接口的技术特性。我们深知商业变现对于平台长久运营的重要性，若 Bilibili 官方提出接入广告业务或调整相关功能以保障其商业利益的要求，本项目承诺将予以积极响应与配合。
             </p>
             <p class="paragraph last">
-              <strong>商业禁令：</strong> 本项目遵循 <strong>GPL v3.0 开源协议</strong>，但严禁将本项目及其衍生品用于任何形式的商业盈利（包括但不限于付费下载、广告植入、会员倒卖）。如果您认可本应用的体验，请务必支持 Bilibili 官方正版客户端及大会员服务。
+              <strong>商业禁令：</strong> 本项目遵循 <strong>AGPL v3.0 开源协议</strong>，但严禁将本项目及其衍生品用于任何形式的商业盈利（包括但不限于付费下载、广告植入、会员倒卖）。如果您认可本应用的体验，请务必支持 Bilibili 官方正版客户端及大会员服务。
             </p>
           </div>
         </div>
@@ -163,7 +169,7 @@
         </div>
       </div>
       <div class="footer">
-      Designed & Developed by <b>Your Name</b><br/>
+      Designed & Developed by <b>隣に佇んて</b><br/>
       Copyright © 2025 Bili Tablet Team
     </div>
     </div>
